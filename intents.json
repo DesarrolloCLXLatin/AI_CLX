@@ -1,0 +1,55 @@
+{"intents":[
+    {
+        "tag": "saludo",
+        "patterns": ["hola", "ola", "Hola", "¡Hola!"],
+        "responses": ["Hola! ¿Como estas?"],
+        "feedback": [
+            {
+                "user_input": "Hola",
+                "correct_reponse": "Hola!"
+            },
+            {
+                "user_input": "ola",
+                "correct_reponse": "Hola"
+            }
+        ]
+    },
+    {
+        "tag": "nombre",
+        "patterns": ["cómo es tu nombre", "cómo te llamas", "¿cómo es tu nombre?", "¿cual es tu nombre?" ],
+        "responses": ["Aun no tengo nombre...", "Mi creador no ha definido un nombre para mi"]
+    },
+    {
+        "tag": "eres",
+        "patterns": ["¿De donde eres?", "¿Quien eres?"],
+        "responses": ["Pertenezco a CLX Group", "Soy la AI de CLX Group"]
+    },
+    {
+        "tag": "chrome",
+        "patterns": ["abrir Chrome", "abrir sitio web", "navegar en Chrome"],
+        "responses": ["¿Qué sitio web te gustaría abrir?"]
+    },
+    {
+        "tag": "estado",
+        "patterns": ["como estas", "¿Como estas?", "que tal", "¿Que tal?" ],
+        "responses": ["Bien, ¿y tú que tal estas?"]
+    },
+    {
+        "tag": "CLX",
+        "patterns": ["CLX", "CLX Group", "CLX Group C.A" ],
+        "responses": ["Desde el 2013, Venezuela se convirtió en la casa del grupo empresarial que impulsado desde la visión de su CEO Nasar Dagga ha sumado a marcas importantes al país, como, Samsung, MultiMax Store, Xio Latin."]
+    }, 
+    {
+        "tag": "historia",
+        "patterns": ["¿Que es CLX", "¿Que es CLX Group?", "que es clx group", "historia de clx group" ],
+        "responses": ["En el año 2016, se conformó en Venezuela, el Consorcio LUX, C.A., como una empresa dedicada a la distribución y venta al mayor de línea blanca, línea marrón, telefonía móvil y equipos electrodomésticos en distintas regiones del país."]
+    },
+    {
+        "tag": "sql_query",
+        "patterns": ["Busca usuarios con nombre", "Encuentra todos los productos", "Muestra las ventas del mes pasado"],
+        "responses": ["Ejecutando consulta SQL..."],
+        "context": ["sql_query"]
+    }
+]
+
+}
